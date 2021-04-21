@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif;
+  }
+
+  #app {
+    height: 100vh;
+  }
+  .clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.mr15 {
+    margin-right: 15px;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.tr {
+    text-align: right;
+}
+.tl {
+    text-align: left;
+}
+.tc {
+    text-align: center;
+}
+.fw {
+    font-weight: 800;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.pf {
+    position: fixed;
+}
+.none,
+.hide {
+    display: none !important;
+}
+.hidden {
+    visibility: hidden;
+}
+.disable {
+    opacity: 0.4;
+}
+.db {
+    display: block;
+}
+.margin0auto ,.auto{
+    display: block;
+    margin: 0 auto;
+}
+.elipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.btn{
+    &:active{opacity: 0.7;}
+}
+
+// 超1h行出打点
+// .lineClamp(@line: 1) when(@line =1) {
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+// }
+
+// 多行超出打点
+// .lineClamp(@line: 1) when(@line > 1) {
+//     display: -webkit-box;
+//     -webkit-line-clamp: @line;
+//     /*! autoprefixer: off */
+//     -webkit-box-orient: vertical;
+//     text-overflow: ellipsis;
+//     word-break: break-all;
+//     overflow: hidden;
+// }
+
+// .generate-lines(@n, @i: 1) when (@i =< @n) {
+//     .line-@{i} {
+//         .lineClamp(@i);
+//     }
+//     .generate-lines(@n, (@i + 1));
+// }
+// .generate-lines(5);
+// global mixin
+// @mixin lineClamp($line) {
+// 	@if ($line==1) {
+// 		white-space: nowrap;
+// 		overflow: hidden;
+// 		text-overflow: ellipsis;
+// 	}
+// 	@else {
+// 		display: -webkit-box;
+// 		-webkit-line-clamp: $line;
+//         /*! autoprefixer: ignore next */
+//         -webkit-box-orient: vertical;
+// 		text-overflow: ellipsis;
+// 		word-break: break-all;
+// 		overflow: hidden;
+// 	}
+// }
+
+.flex {
+    display: flex;
+}
+.flex1 {
+    flex: 1;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-center {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.flex-between {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.justify-between {
+    justify-content: space-between !important;
+}
+.justify-start {
+    justify-content: flex-start !important;
+}
+.justify-center {
+    justify-content: center !important;
+}
+.justify-end {
+    justify-content: flex-end !important;
+}
+// 内容布局
+// .serch-conten{
+//     padding: 0 24px;
+//     font-size: 12px;
+//     width: 100%;
+//     background: #fff;
+// }
